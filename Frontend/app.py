@@ -22,10 +22,10 @@ def recommend(movie):
         recommend_movies_posters.append(fetch_poster(moive_id))
     return recommend_movies,recommend_movies_posters
 
-movie_dict = pickle.load(open('F:\MANAS\Projects\ML Projects\Movie-Recommender System\movie_dict.pkl', 'rb'))
+movie_dict = pickle.load(open('..\movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movie_dict)
 #print(movies.head())
-similarity = pickle.load(open('F:\MANAS\Projects\ML Projects\Movie-Recommender System\similarity.pkl', 'rb'))
+similarity = pickle.load(open('..\similarity.pkl', 'rb'))
 
 st.title("Movie Recommender System")
 
